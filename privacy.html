@@ -3,44 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Privacy Policy | USA Job Finder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-<div class="container">
-<div class="logo">
-<img src="images/logo.png">
-<span>USA Job Finder</span>
-</div>
-</div>
+<header>
+  <div class="nav">
+    <button class="hamburger" onclick="openDrawer()" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="brand"><img src="logo.png" alt="USA Job Finder logo">USA Job Finder</a>
+    <div style="width:42px;"></div>
+  </div>
 </header>
 
-<section class="featured-jobs">
-<div class="container">
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<nav class="drawer" id="drawer">
+  <div class="drawer-head">
+    <span class="brand"><img src="logo.png" alt="logo">USA Job Finder</span>
+    <button class="drawer-close" onclick="closeDrawer()">✕</button>
+  </div>
+  <div class="drawer-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="jobs.html">💼 Jobs</a>
+    <a href="work-from-home.html">🏡 Work From Home</a>
+    <a href="jobs.html#featured">⭐ Featured Jobs</a>
+    <a href="index.html#companies">🏢 Top Companies</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="contact.html">✉️ Contact</a>
+  </div>
+  <a href="join.html" class="drawer-cta">👤 Join Free</a>
+</nav>
 
-<h2>Privacy Policy</h2>
+<main>
+  <div class="wrap" style="max-width:640px; padding-top:24px;">
+    <div class="hero-eyebrow">LEGAL</div>
+    <h1 style="font-size:1.6rem; margin-bottom:6px;">Privacy Policy</h1>
+    <p style="color:var(--muted); margin-bottom:24px;">Last updated: 2026</p>
 
-<p>
-We respect your privacy.
-We do not sell your personal information.
-</p>
+    <div style="color:var(--muted); font-size:0.94rem;">
+      <h2 style="font-size:1.02rem; color:var(--text); margin:20px 0 8px;">Information We Collect</h2>
+      <p>We may collect basic information you provide, such as your email address when subscribing to job alerts or contacting us through our form.</p>
 
-<p>
-By using this website you agree to our privacy policy.
-</p>
+      <h2 style="font-size:1.02rem; color:var(--text); margin:20px 0 8px;">How We Use It</h2>
+      <p>We use collected information solely to send job alerts you've requested and to respond to inquiries. We do not sell personal information to third parties.</p>
 
-</div>
-</section>
+      <h2 style="font-size:1.02rem; color:var(--text); margin:20px 0 8px;">Cookies</h2>
+      <p>Our site may use cookies to remember basic preferences and improve your browsing experience.</p>
 
-<footer>
-<div class="container">
-<p>© 2026 USA Job Finder</p>
-</div>
+      <h2 style="font-size:1.02rem; color:var(--text); margin:20px 0 8px;">Third-Party Links</h2>
+      <p>Job listings may link to external company career pages or affiliate links. We are not responsible for the privacy practices of those external sites.</p>
+
+      <h2 style="font-size:1.02rem; color:var(--text); margin:20px 0 8px;">Contact</h2>
+      <p>Questions about this policy? Reach out via our <a href="contact.html" style="color:var(--blue); font-weight:600;">Contact page</a>.</p>
+    </div>
+  </div>
+</main>
+
+<footer style="margin-top:26px;">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a><a href="jobs.html">Jobs</a><a href="work-from-home.html">Work From Home</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a>
+    </div>
+    <div class="foot-bottom"><span>© 2026 USA Job Finder. All Rights Reserved.</span></div>
+  </div>
 </footer>
 
-<script src="js/script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
