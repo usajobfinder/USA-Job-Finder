@@ -1,94 +1,30 @@
-// ==========================
-// USA Job Finder - Final Script
-// ==========================
-
-// Search Jobs
-const searchInput = document.getElementById("searchInput");
-const searchBtn = document.getElementById("searchBtn");
-
-if (searchBtn) {
-  searchBtn.addEventListener("click", function () {
-    const keyword = searchInput.value.toLowerCase();
-    const cards = document.querySelectorAll(".job-card");
-
-    cards.forEach(card => {
-      const text = card.innerText.toLowerCase();
-
-      if (text.includes(keyword)) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
-  });
+// Hamburger drawer
+function openDrawer(){
+  document.getElementById('drawer').classList.add('open');
+  document.getElementById('overlay').classList.add('open');
+}
+function closeDrawer(){
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
 }
 
-// Save Job
-document.querySelectorAll(".save-btn").forEach(btn => {
-  btn.addEventListener("click", function () {
-    this.innerHTML = "✅ Saved";
-    this.disabled = true;
-    alert("Job saved successfully!");
-  });
-});
-
-// Share Job
-document.querySelectorAll(".share-btn").forEach(btn => {
-  btn.addEventListener("click", function () {
-
-    if (navigator.share) {
-
-      navigator.share({
-        title: document.title,
-        text: "Check out this USA Job!",
-        url: window.location.href
-      });
-
-    } else {
-
-      navigator.clipboard.writeText(window.location.href);
-      alert("Job link copied successfully!");
-
-    }
-
-  });
-});
-
-// Back To Top Button
-const topBtn = document.getElementById("topBtn");
-
-window.onscroll = function () {
-
-  if (!topBtn) return;
-
-  if (document.documentElement.scrollTop > 300) {
-    topBtn.style.display = "block";
+// Share button — uses native Share Sheet if available, else custom bottom sheet
+function shareJob(title, url){
+  const fullUrl = url || window.location.href;
+  const shareData = { title: title, text: 'Check out this job: ' + title, url: fullUrl };
+  if(navigator.share){
+    navigator.share(shareData).catch(()=>{});
   } else {
-    topBtn.style.display = "none";
+    const encUrl = encodeURIComponent(fullUrl);
+    const encText = encodeURIComponent(title);
+    document.getElementById('shareFb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encUrl;
+    document.getElementById('shareWa').href = 'https://wa.me/?text=' + encText + '%20' + encUrl;
+    document.getElementById('shareMsg').href = 'fb-messenger://share/?link=' + encUrl;
+    document.getElementById('shareTg').href = 'https://t.me/share/url?url=' + encUrl + '&text=' + encText;
+    document.getElementById('shareGm').href = 'mailto:?subject=' + encText + '&body=' + encUrl;
+    document.getElementById('shareSheet').classList.add('open');
   }
-
-};
-
-if (topBtn) {
-  topBtn.onclick = function () {
-
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-
-  };
 }
-
-// Dark Mode
-const darkBtn = document.getElementById("darkModeBtn");
-
-if (darkBtn) {
-
-  darkBtn.addEventListener("click", function () {
-
-    document.body.classList.toggle("dark-mode");
-
-  });
-
+function closeShareSheet(){
+  document.getElementById('shareSheet').classList.remove('open');
 }
