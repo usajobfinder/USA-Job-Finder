@@ -3,51 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms & Conditions | USA Job Finder</title>
+<title>Terms of Service | USA Job Finder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-<h1>🇺🇸 USA Job Finder</h1>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="jobs.html">Jobs</a>
-<a href="work-from-anywhere work-from home.html">Work From Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-
+  <div class="nav">
+    <button class="hamburger" onclick="openDrawer()" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="brand"><img src="logo.png" alt="USA Job Finder logo">USA Job Finder</a>
+    <div style="width:42px;"></div>
+  </div>
 </header>
 
-<section class="hero">
-<h2>Terms & Conditions</h2>
-<p>Please read these terms before using our website.</p>
-</section>
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<nav class="drawer" id="drawer">
+  <div class="drawer-head">
+    <span class="brand"><img src="logo.png" alt="logo">USA Job Finder</span>
+    <button class="drawer-close" onclick="closeDrawer()">✕</button>
+  </div>
+  <div class="drawer-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="jobs.html">💼 Jobs</a>
+    <a href="work-from-home.html">🏡 Work From Home</a>
+    <a href="jobs.html#featured">⭐ Featured Jobs</a>
+    <a href="index.html#companies">🏢 Top Companies</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="contact.html">✉️ Contact</a>
+  </div>
+  <a href="join.html" class="drawer-cta">👤 Join Free</a>
+</nav>
 
-<section class="jobs">
+<main>
+  <div class="wrap" style="max-width:640px; padding-top:24px;">
+    <div class="hero-eyebrow">LEGAL</div>
+    <h1 style="font-size:1.6rem; margin-bottom:6px;">Terms of Service</h1>
+    <p style="color:var(--muted); margin-bottom:24px;">Last updated: 2026</p>
 
-<div class="job-card">
-<h3>Website Use</h3>
-<p>You agree to use this website only for lawful purposes.</p>
-</div>
+    <div style="color:var(--muted); font-size:0.94rem;">
+      <h2 style="font-size:1.02rem; color:var(--text); margin:20px 0 8px;">Use of This Site</h2>
+      <p>USA Job Finder provides job listing information for informational purposes. We do not guarantee the accuracy or availability of any listing at all times.</p>
 
-<div class="job-card">
-<h3>Job Information</h3>
-<p>We share job listings for informational purposes. Please verify details before applying.</p>
-</div>
+      <h2 style="font-size:1.02rem; color:var(--text); margin:20px 0 8px;">Third-Party Listings</h2>
+      <p>Some listings may include affiliate or promotional links to third-party sites. We are not responsible for the content, hiring practices, or outcomes of external companies.</p>
 
-<div class="job-card">
-<h3>External Links</h3>
-<p>Some Apply Now buttons may redirect to third-party websites. We are not responsible for their content or services.</p>
-</div>
+      <h2 style="font-size:1.02rem; color:var(--text); margin:20px 0 8px;">No Guarantee of Employment</h2>
+      <p>Applying through a listing on this site does not guarantee an interview, offer, or employment of any kind.</p>
 
-</section>
+      <h2 style="font-size:1.02rem; color:var(--text); margin:20px 0 8px;">Changes to These Terms</h2>
+      <p>We may update these terms from time to time. Continued use of the site means you accept the current version.</p>
 
-<footer>
-<p>© 2026 USA Job Finder. All Rights Reserved.</p>
+      <h2 style="font-size:1.02rem; color:var(--text); margin:20px 0 8px;">Contact</h2>
+      <p>Questions about these terms? Reach out via our <a href="contact.html" style="color:var(--blue); font-weight:600;">Contact page</a>.</p>
+    </div>
+  </div>
+</main>
+
+<footer style="margin-top:26px;">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a><a href="jobs.html">Jobs</a><a href="work-from-home.html">Work From Home</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a>
+    </div>
+    <div class="foot-bottom"><span>© 2026 USA Job Finder. All Rights Reserved.</span></div>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
