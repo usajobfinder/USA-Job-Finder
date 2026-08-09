@@ -4,7 +4,7 @@ const JOBS = {
   "google-data-entry": {
     title: "Remote Data Entry Clerk",
     company: "Google",
-    logo: "https://logo.clearbit.com/google.com",
+    logo: "https://www.google.com/s2/favicons?domain=google.com&sz=128",
     salary: "$30/hour",
     location: "USA",
     type: "Full Time",
@@ -27,7 +27,7 @@ const JOBS = {
   "amazon-support": {
     title: "Customer Support Agent",
     company: "Amazon",
-    logo: "https://logo.clearbit.com/amazon.com",
+    logo: "https://www.google.com/s2/favicons?domain=amazon.com&sz=128",
     salary: "$28/hour",
     location: "USA",
     type: "Full Time",
@@ -50,7 +50,7 @@ const JOBS = {
   "microsoft-va": {
     title: "Virtual Assistant",
     company: "Microsoft",
-    logo: "https://logo.clearbit.com/microsoft.com",
+    logo: "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128",
     salary: "$35/hour",
     location: "USA",
     type: "Part Time",
@@ -73,7 +73,7 @@ const JOBS = {
   "apple-marketing": {
     title: "Marketing Assistant",
     company: "Apple",
-    logo: "https://logo.clearbit.com/apple.com",
+    logo: "https://www.google.com/s2/favicons?domain=apple.com&sz=128",
     salary: "$32/hour",
     location: "USA",
     type: "Full Time",
@@ -96,7 +96,7 @@ const JOBS = {
   "tesla-sales": {
     title: "Remote Sales Representative",
     company: "Tesla",
-    logo: "https://logo.clearbit.com/tesla.com",
+    logo: "https://www.google.com/s2/favicons?domain=tesla.com&sz=128",
     salary: "$34/hour",
     location: "USA",
     type: "Full Time",
@@ -119,7 +119,7 @@ const JOBS = {
   "walmart-admin": {
     title: "Administrative Assistant",
     company: "Walmart",
-    logo: "https://logo.clearbit.com/walmart.com",
+    logo: "https://www.google.com/s2/favicons?domain=walmart.com&sz=128",
     salary: "$27/hour",
     location: "USA",
     type: "Part Time",
