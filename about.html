@@ -3,43 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | USA Job Finder</title>
-<link rel="stylesheet" href="css/style.css">
+<title>About Us | USA Job Finder</title>
+<meta name="description" content="Learn about USA Job Finder — our mission to connect job seekers with real opportunities across the USA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-<div class="container">
-<div class="logo">
-<img src="images/logo.png" alt="Logo">
-<span>USA Job Finder</span>
-</div>
-</div>
+<header>
+  <div class="nav">
+    <button class="hamburger" onclick="openDrawer()" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="brand"><img src="logo.png" alt="USA Job Finder logo">USA Job Finder</a>
+    <div style="width:42px;"></div>
+  </div>
 </header>
 
-<section class="featured-jobs">
-<div class="container">
-<h2>About Us</h2>
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<nav class="drawer" id="drawer">
+  <div class="drawer-head">
+    <span class="brand"><img src="logo.png" alt="logo">USA Job Finder</span>
+    <button class="drawer-close" onclick="closeDrawer()">✕</button>
+  </div>
+  <div class="drawer-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="jobs.html">💼 Jobs</a>
+    <a href="work-from-home.html">🏡 Work From Home</a>
+    <a href="jobs.html#featured">⭐ Featured Jobs</a>
+    <a href="index.html#companies">🏢 Top Companies</a>
+    <a href="about.html" class="active">ℹ️ About</a>
+    <a href="contact.html">✉️ Contact</a>
+  </div>
+  <a href="join.html" class="drawer-cta">👤 Join Free</a>
+</nav>
 
-<p>
-USA Job Finder helps job seekers discover Remote, Work From Home,
-Full-Time and Part-Time jobs across the United States.
-</p>
+<main>
+  <section class="hero" style="padding-bottom:10px;">
+    <div class="wrap">
+      <div class="hero-eyebrow">OUR STORY</div>
+      <h1 style="font-size:1.8rem;">Helping People Find Real Work, Faster</h1>
+      <p class="sub">No fake listings, no clutter — just roles worth applying to.</p>
+    </div>
+  </section>
 
-<p>
-Our goal is to make job searching simple and fast.
-</p>
+  <section style="padding-top:6px;">
+    <div class="wrap">
+      <div style="max-width:640px; color:var(--muted); margin-bottom:26px;">
+        <h2 style="font-size:1.1rem; color:var(--text); margin-bottom:8px;">What We Do</h2>
+        <p style="margin-bottom:18px;">We collect and curate Remote, Work From Home, Full Time and Part Time job listings from across the United States, and present them in one clean, fast place. Every listing is checked before it goes live.</p>
+        <h2 style="font-size:1.1rem; color:var(--text); margin-bottom:8px;">Why We Started</h2>
+        <p>Job boards are often cluttered with expired postings and confusing filters. We wanted something simpler — search, filter, and apply without friction.</p>
+      </div>
 
-</div>
-</section>
+      <div class="section-head"><h2>What We Value</h2></div>
+      <div class="grid">
+        <div class="job-card" style="padding:20px;">
+          <div style="font-size:1.4rem; margin-bottom:8px;">✅</div>
+          <div class="job-title" style="margin-bottom:4px;">Verified Listings</div>
+          <p style="color:var(--muted); font-size:0.88rem;">Every job is checked before publishing — no expired or fake posts.</p>
+        </div>
+        <div class="job-card" style="padding:20px;">
+          <div style="font-size:1.4rem; margin-bottom:8px;">⚡</div>
+          <div class="job-title" style="margin-bottom:4px;">Fast &amp; Simple</div>
+          <p style="color:var(--muted); font-size:0.88rem;">No sign-up walls, no clutter — search and apply in seconds.</p>
+        </div>
+        <div class="job-card" style="padding:20px;">
+          <div style="font-size:1.4rem; margin-bottom:8px;">🤝</div>
+          <div class="job-title" style="margin-bottom:4px;">Job Seeker First</div>
+          <p style="color:var(--muted); font-size:0.88rem;">Built around what actually helps you find work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
-<div class="container">
-<p>© 2026 USA Job Finder</p>
-</div>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a><a href="jobs.html">Jobs</a><a href="work-from-home.html">Work From Home</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a>
+    </div>
+    <div class="foot-bottom"><span>© 2026 USA Job Finder. All Rights Reserved.</span></div>
+  </div>
 </footer>
 
-<script src="js/script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
