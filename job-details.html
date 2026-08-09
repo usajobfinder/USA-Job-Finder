@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Remote Data Entry Clerk at Google | USA Job Finder</title>
-<meta name="description" content="Apply for Remote Data Entry Clerk at Google — $30/hour, California, USA.">
+<title>Job Details | USA Job Finder</title>
+<meta name="description" content="View full job details and apply — USA Job Finder.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -41,44 +41,13 @@
   <div class="wrap" style="padding-top:20px; max-width:640px;">
     <a href="jobs.html" style="display:inline-block; margin-bottom:16px; color:var(--blue); font-weight:600; font-size:0.88rem;">← Back to Jobs</a>
 
-    <div style="background:#fff; border:1px solid var(--border); border-radius:18px; padding:24px; box-shadow:0 4px 16px rgba(16,24,40,0.06);">
-      <div style="display:flex; align-items:center; gap:14px; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid var(--border);">
-        <img src="https://logo.clearbit.com/google.com" alt="Google logo" style="width:56px; height:56px; border-radius:14px; border:1px solid var(--border); padding:8px; object-fit:contain;">
-        <div>
-          <h1 style="font-size:1.3rem; margin-bottom:2px;">Remote Data Entry Clerk</h1>
-          <div style="color:var(--muted); font-size:0.92rem;">Google</div>
-        </div>
-        <span class="badge hot" style="position:static; margin-left:auto;">🔥 Hot Job</span>
-      </div>
+    <div id="jobDetailsCard"></div>
 
-      <div class="job-meta" style="margin-bottom:20px;">
-        <span class="salary">💰 $30/hour</span>
-        <span>📍 USA</span>
-        <span>🕒 Full Time</span>
-        <span>🏠 Remote</span>
-      </div>
-
-      <h2 style="font-size:1.02rem; margin-bottom:8px;">About the Role</h2>
-      <p style="color:var(--muted); margin-bottom:16px; font-size:0.94rem;">We're looking for a detail-oriented Remote Data Entry Clerk to accurately input, update, and maintain records across our internal systems. Fully remote, flexible-hours position.</p>
-
-      <h2 style="font-size:1.02rem; margin-bottom:8px;">Responsibilities</h2>
-      <ul style="color:var(--muted); font-size:0.94rem; margin:0 0 16px 20px;">
-        <li style="margin-bottom:6px;">Enter and update data across internal databases with high accuracy</li>
-        <li style="margin-bottom:6px;">Review records for errors and correct discrepancies</li>
-        <li style="margin-bottom:6px;">Maintain confidentiality of sensitive information</li>
-      </ul>
-
-      <h2 style="font-size:1.02rem; margin-bottom:8px;">Requirements</h2>
-      <ul style="color:var(--muted); font-size:0.94rem; margin:0 0 20px 20px;">
-        <li style="margin-bottom:6px;">Strong typing speed and attention to detail</li>
-        <li style="margin-bottom:6px;">Comfortable with spreadsheets and basic data tools</li>
-        <li style="margin-bottom:6px;">Reliable internet connection</li>
-      </ul>
-
-      <div class="job-actions">
-        <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
-        <button class="share-btn" onclick="shareJob('Remote Data Entry Clerk at Google')">📤</button>
-      </div>
+    <div id="notFound" style="display:none; text-align:center; padding:40px 20px;">
+      <div style="font-size:2rem; margin-bottom:10px;">🔍</div>
+      <h1 style="font-size:1.2rem; margin-bottom:8px;">Job not found</h1>
+      <p style="color:var(--muted); margin-bottom:20px;">This listing may have expired or the link is incorrect.</p>
+      <a href="jobs.html" style="display:inline-block; padding:12px 24px; border:1px solid var(--border); border-radius:9px; font-weight:600;">Browse All Jobs</a>
     </div>
   </div>
 </main>
@@ -107,6 +76,61 @@
   </div>
 </div>
 
+<script src="jobs-data.js"></script>
 <script src="script.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const jobId = params.get('id');
+  const job = JOBS[jobId];
+
+  if (job) {
+    document.title = job.title + " at " + job.company + " | USA Job Finder";
+    const badgeHtml = job.badge === "hot"
+      ? '<span class="badge hot" style="position:static; margin-left:auto;">🔥 Hot Job</span>'
+      : job.badge === "featured"
+      ? '<span class="badge featured" style="position:static; margin-left:auto;">⭐ Featured</span>'
+      : '';
+
+    document.getElementById('jobDetailsCard').innerHTML = `
+      <div style="background:#fff; border:1px solid var(--border); border-radius:18px; padding:24px; box-shadow:0 4px 16px rgba(16,24,40,0.06);">
+        <div style="display:flex; align-items:center; gap:14px; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid var(--border);">
+          <img src="${job.logo}" alt="${job.company} logo" style="width:56px; height:56px; border-radius:14px; border:1px solid var(--border); padding:8px; object-fit:contain;">
+          <div>
+            <h1 style="font-size:1.3rem; margin-bottom:2px;">${job.title}</h1>
+            <div style="color:var(--muted); font-size:0.92rem;">${job.company}</div>
+          </div>
+          ${badgeHtml}
+        </div>
+
+        <div class="job-meta" style="margin-bottom:20px;">
+          <span class="salary">💰 ${job.salary}</span>
+          <span>📍 ${job.location}</span>
+          <span>🕒 ${job.type}</span>
+          <span>🏠 ${job.remote}</span>
+        </div>
+
+        <h2 style="font-size:1.02rem; margin-bottom:8px;">About the Role</h2>
+        <p style="color:var(--muted); margin-bottom:16px; font-size:0.94rem;">${job.about}</p>
+
+        <h2 style="font-size:1.02rem; margin-bottom:8px;">Responsibilities</h2>
+        <ul style="color:var(--muted); font-size:0.94rem; margin:0 0 16px 20px;">
+          ${job.responsibilities.map(r => `<li style="margin-bottom:6px;">${r}</li>`).join('')}
+        </ul>
+
+        <h2 style="font-size:1.02rem; margin-bottom:8px;">Requirements</h2>
+        <ul style="color:var(--muted); font-size:0.94rem; margin:0 0 20px 20px;">
+          ${job.requirements.map(r => `<li style="margin-bottom:6px;">${r}</li>`).join('')}
+        </ul>
+
+        <div class="job-actions">
+          <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
+          <button class="share-btn" onclick="shareJob('${job.title} at ${job.company}')">📤</button>
+        </div>
+      </div>
+    `;
+  } else {
+    document.getElementById('notFound').style.display = 'block';
+  }
+</script>
 </body>
 </html>
