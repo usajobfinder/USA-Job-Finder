@@ -1,397 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>USA Job Finder | Remote & Work From Home Jobs</title>
-
-<meta name="description" content="Find the best Remote, Work From Home, Full Time and Part Time Jobs in the USA.">
-
-<link rel="stylesheet" href="css/style.css">
-
+<title>USA Job Finder | Find Your Dream Job in the USA</title>
+<meta name="description" content="Find the best Remote, Work From Home, Full Time and Part Time Jobs in the USA. Verified listings updated daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<button id="topBtn">⬆</button>
 <body>
 
 <!-- Header -->
-
-<header class="header">
-
-<div class="container">
-
-<div class="logo">
-
-<img src="images/logo.png" alt="USA Job Finder">
-
-<span>USA Job Finder</span>
-
-</div>
-
-<nav><button id="darkModeBtn">🌙</button>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="jobs.html">Jobs</a></li>
-
-<li><a href="work-from-home.html">Work From Home</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</div>
-
+<header>
+  <div class="nav">
+    <button class="hamburger" onclick="openDrawer()" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="brand"><img src="logo.png" alt="USA Job Finder logo">USA Job Finder</a>
+    <div style="width:42px;"></div>
+  </div>
 </header>
 
-<!-- Hero -->
-
-<section class="hero">
-
-<div class="container">
-
-<h1>Find Your Dream Job in the USA</h1>
-
-<p>
-
-Remote • Work From Home • Full Time • Part Time
-
-</p>
-
-<div class="search-box">
-
-<input
-type="text"
-id="searchInput"
-placeholder="Search jobs...">
-
-<button id="searchBtn">
-
-Search
-
-</button>
-
-</div>
-
-<div class="hero-buttons">
-
-<a href="jobs.html" class="btn">
-
-Browse Jobs
-
-</a>
-
-<a href="work-from-home.html" class="btn btn-outline">
-
-Work From Home
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-<!-- Featured Jobs -->
-
-<section class="featured-jobs">
-
-<div class="container">
-
-<h2>⭐ Featured Jobs</h2>
-
-<div class="job-grid">
-
-<div class="job-card">
-
-<h3>Remote Data Entry Clerk</h3>
-
-<p><strong>Company:</strong> Google</p>
-
-<p>📍 California, USA</p>
-
-<p>💰 $30/hour</p>
-
-<div class="job-buttons">
-
-<button class="save-btn">❤️ Save</button>
-
-<button class="share-btn">📤 Share</button>
-
-<a href="job-details.html" class="details-btn">View Details</a>
-
-<a href="https://your-cpa-link.com" target="_blank" class="apply-btn">Apply Now</a>
-
-</div>
-
-</div>
-
-<div class="job-card">
-
-<h3>Customer Support Agent</h3>
-
-<p><strong>Company:</strong> Amazon</p>
-
-<p>📍 Texas, USA</p>
-
-<p>💰 $28/hour</p>
-
-<div class="job-buttons">
-
-<button class="save-btn">❤️ Save</button>
-
-<button class="share-btn">📤 Share</button>
-
-<a href="job-details.html" class="details-btn">View Details</a>
-
-<a href="https://your-cpa-link.com" target="_blank" class="apply-btn">Apply Now</a>
-
-</div>
-
-</div>
-
-<div class="job-card">
-
-<h3>Virtual Assistant</h3>
-
-<p><strong>Company:</strong> Microsoft</p>
-
-<p>📍 New York, USA</p>
-
-<p>💰 $35/hour</p>
-
-<div class="job-buttons">
-
-<button class="save-btn">❤️ Save</button>
-
-<button class="share-btn">📤 Share</button>
-
-<a href="job-details.html" class="details-btn">View Details</a>
-
-<a href="https://your-cpa-link.com" target="_blank" class="apply-btn">Apply Now</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Latest Jobs -->
-
-<section class="latest-jobs">
-
-<div class="container">
-
-<h2>🔥 Latest Jobs</h2>
-
-<div class="job-grid">
-
-<div class="job-card">
-
-<h3>Marketing Assistant</h3>
-
-<p><strong>Company:</strong> Apple</p>
-
-<p>📍 Florida</p>
-
-<p>💰 $32/hour</p>
-
-<div class="job-buttons">
-
-<button class="save-btn">❤️ Save</button>
-
-<button class="share-btn">📤 Share</button>
-
-<a href="job-details.html" class="details-btn">View Details</a>
-
-<a href="https://your-cpa-link.com" target="_blank" class="apply-btn">Apply Now</a>
-
-</div>
-
-</div>
-
-<div class="job-card">
-
-<h3>Remote Sales Representative</h3>
-
-<p><strong>Company:</strong> Tesla</p>
-
-<p>📍 Nevada</p>
-
-<p>💰 $34/hour</p>
-
-<div class="job-buttons">
-
-<button class="save-btn">❤️ Save</button>
-
-<button class="share-btn">📤 Share</button>
-
-<a href="job-details.html" class="details-btn">View Details</a>
-
-<a href="https://your-cpa-link.com" target="_blank" class="apply-btn">Apply Now</a>
-
-</div>
-
-</div>
-
-<div class="job-card">
-
-<h3>Administrative Assistant</h3>
-
-<p><strong>Company:</strong> Walmart</p>
-
-<p>📍 Illinois</p>
-
-<p>💰 $27/hour</p>
-
-<div class="job-buttons">
-
-<button class="save-btn">❤️ Save</button>
-
-<button class="share-btn">📤 Share</button>
-
-<a href="job-details.html" class="details-btn">View Details</a>
-
-<a href="https://your-cpa-link.com" target="_blank" class="apply-btn">Apply Now</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Top Companies -->
-
-<section class="companies">
-
-<div class="container">
-
-<h2>Top Hiring Companies</h2>
-
-<div class="company-grid">
-
-<div>Google</div>
-
-<div>Amazon</div>
-
-<div>Microsoft</div>
-
-<div>Apple</div>
-
-<div>Tesla</div>
-
-<div>Walmart</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- Popular Categories -->
-
-<section class="categories">
-
-<div class="container">
-
-<h2>Popular Job Categories</h2>
-
-<div class="category-grid">
-
-<a href="work-from-home.html" class="category-card">🏠 Work From Home</a>
-
-<a href="jobs.html" class="category-card">💻 Remote Jobs</a>
-
-<a href="jobs.html" class="category-card">⌨️ Data Entry</a>
-
-<a href="jobs.html" class="category-card">📞 Customer Support</a>
-
-<a href="jobs.html" class="category-card">📈 Marketing</a>
-
-<a href="jobs.html" class="category-card">👨‍💼 Virtual Assistant</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Newsletter -->
-
-<section class="newsletter">
-
-<div class="container">
-
-<h2>Get New Job Alerts</h2>
-
-<p>Subscribe to receive the latest USA job updates.</p>
-
-<form>
-
-<input type="email" placeholder="Enter your email">
-
-<button type="submit">Subscribe</button>
-
-</form>
-
-</div>
-
-</section>
-
-<!-- Footer -->
+<!-- Side Drawer -->
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<nav class="drawer" id="drawer">
+  <div class="drawer-head">
+    <span class="brand"><img src="logo.png" alt="logo">USA Job Finder</span>
+    <button class="drawer-close" onclick="closeDrawer()">✕</button>
+  </div>
+  <div class="drawer-links">
+    <a href="index.html" class="active">🏠 Home</a>
+    <a href="jobs.html">💼 Jobs</a>
+    <a href="work-from-home.html">🏡 Work From Home</a>
+    <a href="jobs.html#featured">⭐ Featured Jobs</a>
+    <a href="index.html#companies">🏢 Top Companies</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="contact.html">✉️ Contact</a>
+  </div>
+  <a href="join.html" class="drawer-cta">👤 Join Free</a>
+</nav>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-eyebrow">USA'S TRUSTED JOB LISTINGS</div>
+      <h1>Find Your Dream Job in the USA</h1>
+      <p class="sub"><b>Remote</b> • <b>Work From Home</b> • <b>Full-Time</b> • <b>Part-Time</b></p>
+
+      <div class="search-box">
+        <input type="text" placeholder="🔍 Job title, keyword or company">
+        <button type="button">Search</button>
+      </div>
+      <button class="browse-btn" onclick="location.href='jobs.html'">🔍 Browse Jobs</button>
+
+      <div class="hero-image">
+        <!-- Replace this with your AI-generated image: images/hero-work-from-home.jpg -->
+        <img src="images/hero-work-from-home.jpg" alt="Young woman working from home on laptop" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="placeholder" style="display:none; flex-direction:column; align-items:center; gap:8px;">
+          <span style="font-size:2.4rem;">💻👩‍💻</span>
+          <span>Add your hero image at <b>images/hero-work-from-home.jpg</b><br>(modern, professional, work-from-home style)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Jobs -->
+  <section id="featured">
+    <div class="wrap">
+      <div class="section-head"><h2>⭐ Featured Jobs</h2><a href="jobs.html">See all →</a></div>
+      <div class="grid">
+
+        <div class="job-card">
+          <span class="badge hot">🔥 Hot Job</span>
+          <div class="job-card-top">
+            <img class="company-logo" src="https://logo.clearbit.com/google.com" alt="Google logo">
+            <div><div class="job-title">Remote Data Entry Clerk</div><div class="company-name">Google</div></div>
+          </div>
+          <div class="job-meta">
+            <span class="salary">💰 $30/hr</span>
+            <span>📍 USA</span>
+            <span>🕒 Full Time</span>
+          </div>
+          <div class="job-actions">
+            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
+            <button class="share-btn" onclick="shareJob('Remote Data Entry Clerk at Google','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <span class="badge featured">⭐ Featured</span>
+          <div class="job-card-top">
+            <img class="company-logo" src="https://logo.clearbit.com/amazon.com" alt="Amazon logo">
+            <div><div class="job-title">Customer Support Agent</div><div class="company-name">Amazon</div></div>
+          </div>
+          <div class="job-meta">
+            <span class="salary">💰 $28/hr</span>
+            <span>📍 USA</span>
+            <span>🕒 Full Time</span>
+          </div>
+          <div class="job-actions">
+            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
+            <button class="share-btn" onclick="shareJob('Customer Support Agent at Amazon','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <span class="badge hot">🔥 Hot Job</span>
+          <div class="job-card-top">
+            <img class="company-logo" src="https://logo.clearbit.com/microsoft.com" alt="Microsoft logo">
+            <div><div class="job-title">Virtual Assistant</div><div class="company-name">Microsoft</div></div>
+          </div>
+          <div class="job-meta">
+            <span class="salary">💰 $35/hr</span>
+            <span>📍 USA</span>
+            <span>🕒 Part Time</span>
+          </div>
+          <div class="job-actions">
+            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
+            <button class="share-btn" onclick="shareJob('Virtual Assistant at Microsoft','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Jobs -->
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="section-head"><h2>🆕 Latest Jobs</h2><a href="jobs.html">See all →</a></div>
+      <div class="grid">
+
+        <div class="job-card">
+          <div class="job-card-top">
+            <img class="company-logo" src="https://logo.clearbit.com/apple.com" alt="Apple logo">
+            <div><div class="job-title">Marketing Assistant</div><div class="company-name">Apple</div></div>
+          </div>
+          <div class="job-meta">
+            <span class="salary">💰 $32/hr</span>
+            <span>📍 USA</span>
+            <span>🕒 Full Time</span>
+          </div>
+          <div class="job-actions">
+            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
+            <button class="share-btn" onclick="shareJob('Marketing Assistant at Apple','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="job-card-top">
+            <img class="company-logo" src="https://logo.clearbit.com/tesla.com" alt="Tesla logo">
+            <div><div class="job-title">Remote Sales Representative</div><div class="company-name">Tesla</div></div>
+          </div>
+          <div class="job-meta">
+            <span class="salary">💰 $34/hr</span>
+            <span>📍 USA</span>
+            <span>🕒 Full Time</span>
+          </div>
+          <div class="job-actions">
+            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
+            <button class="share-btn" onclick="shareJob('Remote Sales Representative at Tesla','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="job-card-top">
+            <img class="company-logo" src="https://logo.clearbit.com/walmart.com" alt="Walmart logo">
+            <div><div class="job-title">Administrative Assistant</div><div class="company-name">Walmart</div></div>
+          </div>
+          <div class="job-meta">
+            <span class="salary">💰 $27/hr</span>
+            <span>📍 USA</span>
+            <span>🕒 Part Time</span>
+          </div>
+          <div class="job-actions">
+            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
+            <button class="share-btn" onclick="shareJob('Administrative Assistant at Walmart','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Companies -->
+  <section id="companies">
+    <div class="wrap">
+      <div class="section-head"><h2>🏢 Top Hiring Companies</h2></div>
+      <div class="company-row">
+        <div class="company-chip"><img src="https://logo.clearbit.com/google.com" alt="Google"><span>Google</span></div>
+        <div class="company-chip"><img src="https://logo.clearbit.com/amazon.com" alt="Amazon"><span>Amazon</span></div>
+        <div class="company-chip"><img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft"><span>Microsoft</span></div>
+        <div class="company-chip"><img src="https://logo.clearbit.com/apple.com" alt="Apple"><span>Apple</span></div>
+        <div class="company-chip"><img src="https://logo.clearbit.com/tesla.com" alt="Tesla"><span>Tesla</span></div>
+        <div class="company-chip"><img src="https://logo.clearbit.com/walmart.com" alt="Walmart"><span>Walmart</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Free CTA strip -->
+  <section class="section-alt">
+    <div class="wrap" style="text-align:center;">
+      <h2 style="margin-bottom:8px;">👤 Get Matched Faster</h2>
+      <p style="color:var(--muted); margin-bottom:18px;">Join free and unlock personalized job alerts.</p>
+      <a href="join.html" class="apply-btn" style="display:inline-block; padding:14px 36px;">Join Free</a>
+    </div>
+  </section>
+</main>
 
 <footer>
-
-<div class="container">
-
-<div class="footer-links">
-
-<a href="index.html">Home</a>
-
-<a href="jobs.html">Jobs</a>
-
-<a href="work-from-home.html">Work From Home</a>
-
-<a href="about.html">About</a>
-
-<a href="contact.html">Contact</a>
-
-<a href="privacy.html">Privacy Policy</a>
-
-</div>
-
-<p>
-
-© 2026 USA Job Finder. All Rights Reserved.
-
-</p>
-
-<p>
-
-This website shares job opportunities and may contain promotional or affiliate links.
-
-</p>
-
-</div>
-
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="work-from-home.html">Work From Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 USA Job Finder. All Rights Reserved.</span>
+    </div>
+  </div>
 </footer>
 
-<script src="js/script.js"></script>
+<!-- Share Sheet Fallback -->
+<div class="share-sheet-overlay" id="shareSheet" onclick="if(event.target===this)closeShareSheet()">
+  <div class="share-sheet">
+    <h3 id="shareTitle">Share this job</h3>
+    <div class="share-grid">
+      <a id="shareFb" href="#" target="_blank"><span class="ic fb">f</span>Facebook</a>
+      <a id="shareWa" href="#" target="_blank"><span class="ic wa">W</span>WhatsApp</a>
+      <a id="shareMsg" href="#" target="_blank"><span class="ic msg">M</span>Messenger</a>
+      <a id="shareTg" href="#" target="_blank"><span class="ic tg">T</span>Telegram</a>
+      <a id="shareGm" href="#"><span class="ic gm">@</span>Gmail</a>
+    </div>
+    <button class="share-cancel" onclick="closeShareSheet()">Cancel</button>
+  </div>
+</div>
 
+<script src="script.js"></script>
 </body>
-
 </html>
