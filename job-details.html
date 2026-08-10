@@ -3,134 +3,676 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Job Details | USA Job Finder</title>
-<meta name="description" content="View full job details and apply — USA Job Finder.">
+
+<title>USA Jobs | Job Details | USA Job Finder</title>
+
+<meta name="description" content="Explore USA job opportunities including remote, work from home, full-time and part-time positions. View job details and apply today.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://usajobfinder.github.io/USA-Job-Finder/job-details.html">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- Header -->
 <header>
   <div class="nav">
-    <button class="hamburger" onclick="openDrawer()" aria-label="Open menu"><span></span><span></span><span></span></button>
-    <a href="index.html" class="brand"><img src="logo.png" alt="USA Job Finder logo">USA Job Finder</a>
+
+    <button
+      class="hamburger"
+      onclick="openDrawer()"
+      aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="USA Job Finder logo">
+      USA Job Finder
+    </a>
+
     <div style="width:42px;"></div>
+
   </div>
 </header>
 
-<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
-<nav class="drawer" id="drawer">
-  <div class="drawer-head">
-    <span class="brand"><img src="logo.png" alt="logo">USA Job Finder</span>
-    <button class="drawer-close" onclick="closeDrawer()">✕</button>
-  </div>
-  <div class="drawer-links">
-    <a href="index.html">🏠 Home</a>
-    <a href="jobs.html" class="active">💼 Jobs</a>
-    <a href="work-from-home.html">🏡 Work From Home</a>
-    <a href="jobs.html#featured">⭐ Featured Jobs</a>
-    <a href="index.html#companies">🏢 Top Companies</a>
-    <a href="about.html">ℹ️ About</a>
-    <a href="contact.html">✉️ Contact</a>
-  </div>
-  <a href="join.html" class="drawer-cta">👤 Join Free</a>
-</nav>
 
-<main>
-  <div class="wrap" style="padding-top:20px; max-width:640px;">
-    <a href="jobs.html" style="display:inline-block; margin-bottom:16px; color:var(--blue); font-weight:600; font-size:0.88rem;">← Back to Jobs</a>
-
-    <div id="jobDetailsCard"></div>
-
-    <div id="notFound" style="display:none; text-align:center; padding:40px 20px;">
-      <div style="font-size:2rem; margin-bottom:10px;">🔍</div>
-      <h1 style="font-size:1.2rem; margin-bottom:8px;">Job not found</h1>
-      <p style="color:var(--muted); margin-bottom:20px;">This listing may have expired or the link is incorrect.</p>
-      <a href="jobs.html" style="display:inline-block; padding:12px 24px; border:1px solid var(--border); border-radius:9px; font-weight:600;">Browse All Jobs</a>
-    </div>
-  </div>
-</main>
-
-<footer style="margin-top:26px;">
-  <div class="wrap">
-    <div class="foot-links">
-      <a href="index.html">Home</a><a href="jobs.html">Jobs</a><a href="work-from-home.html">Work From Home</a>
-      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a>
-    </div>
-    <div class="foot-bottom"><span>© 2026 USA Job Finder. All Rights Reserved.</span></div>
-  </div>
-</footer>
-
-<div class="share-sheet-overlay" id="shareSheet" onclick="if(event.target===this)closeShareSheet()">
-  <div class="share-sheet">
-    <h3 id="shareTitle">Share this job</h3>
-    <div class="share-grid">
-      <a id="shareFb" href="#" target="_blank"><span class="ic fb">f</span>Facebook</a>
-      <a id="shareWa" href="#" target="_blank"><span class="ic wa">W</span>WhatsApp</a>
-      <a id="shareMsg" href="#" target="_blank"><span class="ic msg">M</span>Messenger</a>
-      <a id="shareTg" href="#" target="_blank"><span class="ic tg">T</span>Telegram</a>
-      <a id="shareGm" href="#"><span class="ic gm">@</span>Gmail</a>
-    </div>
-    <button class="share-cancel" onclick="closeShareSheet()">Cancel</button>
-  </div>
+<!-- Side Drawer -->
+<div
+  class="overlay"
+  id="overlay"
+  onclick="closeDrawer()">
 </div>
 
+<nav class="drawer" id="drawer">
+
+  <div class="drawer-head">
+
+    <span class="brand">
+      <img src="logo.png" alt="USA Job Finder logo">
+      USA Job Finder
+    </span>
+
+    <button
+      class="drawer-close"
+      onclick="closeDrawer()">
+      ✕
+    </button>
+
+  </div>
+
+  <div class="drawer-links">
+
+    <a href="index.html">
+      🏠 Home
+    </a>
+
+    <a href="jobs.html" class="active">
+      💼 Jobs
+    </a>
+
+    <a href="work-from-home.html">
+      🏡 Work From Home
+    </a>
+
+    <a href="jobs.html#featured">
+      ⭐ Featured Jobs
+    </a>
+
+    <a href="index.html#companies">
+      🏢 Top Companies
+    </a>
+
+    <a href="about.html">
+      ℹ️ About
+    </a>
+
+    <a href="contact.html">
+      ✉️ Contact
+    </a>
+
+  </div>
+
+  <a href="join.html" class="drawer-cta">
+    👤 Join Free
+  </a>
+
+</nav>
+
+
+<main>
+
+  <div
+    class="wrap"
+    style="padding-top:20px; max-width:640px;">
+
+    <a
+      href="jobs.html"
+      style="
+        display:inline-block;
+        margin-bottom:16px;
+        color:var(--blue);
+        font-weight:600;
+        font-size:0.88rem;">
+      ← Back to Jobs
+    </a>
+
+
+    <!--
+      DEFAULT CONTENT
+      This content is visible even before JavaScript loads.
+      It helps search engines understand that this is a real
+      job-details page instead of a Soft 404.
+    -->
+
+    <div
+      id="defaultJobContent"
+      style="
+        background:#fff;
+        border:1px solid var(--border);
+        border-radius:18px;
+        padding:24px;
+        box-shadow:0 4px 16px rgba(16,24,40,0.06);">
+
+      <h1 style="
+        font-size:1.5rem;
+        margin-bottom:10px;">
+        USA Job Opportunities
+      </h1>
+
+      <p style="
+        color:var(--muted);
+        margin-bottom:20px;
+        font-size:0.95rem;">
+        Explore remote, work from home, full-time and part-time
+        job opportunities available in the USA.
+      </p>
+
+      <div class="job-meta" style="margin-bottom:20px;">
+
+        <span>
+          📍 USA
+        </span>
+
+        <span>
+          🏠 Remote & Work From Home
+        </span>
+
+        <span>
+          🕒 Full Time & Part Time
+        </span>
+
+      </div>
+
+      <h2 style="
+        font-size:1.05rem;
+        margin-bottom:8px;">
+        Find Your Next Job
+      </h2>
+
+      <p style="
+        color:var(--muted);
+        margin-bottom:18px;
+        font-size:0.94rem;">
+        Browse available job listings and view complete information
+        about job responsibilities, requirements, location, job type
+        and application details.
+      </p>
+
+      <a
+        href="jobs.html"
+        class="apply-btn"
+        style="
+          display:inline-block;
+          padding:13px 28px;">
+        🔍 Browse USA Jobs
+      </a>
+
+    </div>
+
+
+    <!-- Dynamic Job Details -->
+
+    <div
+      id="jobDetailsCard"
+      style="display:none;">
+    </div>
+
+
+    <!-- Invalid / Missing Job ID -->
+
+    <div
+      id="notFound"
+      style="
+        display:none;
+        text-align:center;
+        padding:40px 20px;">
+
+      <div style="
+        font-size:2rem;
+        margin-bottom:10px;">
+        🔍
+      </div>
+
+      <h1 style="
+        font-size:1.2rem;
+        margin-bottom:8px;">
+        Job Listing Not Available
+      </h1>
+
+      <p style="
+        color:var(--muted);
+        margin-bottom:20px;">
+        This job listing may have expired or the link may be incorrect.
+      </p>
+
+      <a
+        href="jobs.html"
+        style="
+          display:inline-block;
+          padding:12px 24px;
+          border:1px solid var(--border);
+          border-radius:9px;
+          font-weight:600;">
+        Browse All Jobs
+      </a>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<!-- Footer -->
+
+<footer style="margin-top:26px;">
+
+  <div class="wrap">
+
+    <div class="foot-links">
+
+      <a href="index.html">Home</a>
+
+      <a href="jobs.html">Jobs</a>
+
+      <a href="work-from-home.html">
+        Work From Home
+      </a>
+
+      <a href="about.html">About</a>
+
+      <a href="contact.html">Contact</a>
+
+      <a href="privacy.html">
+        Privacy Policy
+      </a>
+
+      <a href="terms.html">
+        Terms
+      </a>
+
+    </div>
+
+    <div class="foot-bottom">
+
+      <span>
+        © 2026 USA Job Finder. All Rights Reserved.
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- Share Sheet -->
+
+<div
+  class="share-sheet-overlay"
+  id="shareSheet"
+  onclick="if(event.target===this)closeShareSheet()">
+
+  <div class="share-sheet">
+
+    <h3 id="shareTitle">
+      Share this job
+    </h3>
+
+    <div class="share-grid">
+
+      <a
+        id="shareFb"
+        href="#"
+        target="_blank">
+        <span class="ic fb">f</span>
+        Facebook
+      </a>
+
+      <a
+        id="shareWa"
+        href="#"
+        target="_blank">
+        <span class="ic wa">W</span>
+        WhatsApp
+      </a>
+
+      <a
+        id="shareMsg"
+        href="#"
+        target="_blank">
+        <span class="ic msg">M</span>
+        Messenger
+      </a>
+
+      <a
+        id="shareTg"
+        href="#"
+        target="_blank">
+        <span class="ic tg">T</span>
+        Telegram
+      </a>
+
+      <a
+        id="shareGm"
+        href="#">
+        <span class="ic gm">@</span>
+        Gmail
+      </a>
+
+    </div>
+
+    <button
+      class="share-cancel"
+      onclick="closeShareSheet()">
+      Cancel
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- Job Data -->
+
 <script src="jobs-data.js"></script>
+
 <script src="script.js"></script>
+
+
 <script>
-  const params = new URLSearchParams(window.location.search);
-  const jobId = params.get('id');
-  const job = JOBS[jobId];
+
+(function () {
+
+  const params =
+    new URLSearchParams(window.location.search);
+
+  const jobId =
+    params.get('id');
+
+  const job =
+    typeof JOBS !== 'undefined'
+      ? JOBS[jobId]
+      : null;
+
+
+  /*
+    If a valid job ID exists,
+    show the actual job details.
+  */
 
   if (job) {
-    document.title = job.title + " at " + job.company + " | USA Job Finder";
-    const badgeHtml = job.badge === "hot"
-      ? '<span class="badge hot" style="position:static; margin-left:auto;">🔥 Hot Job</span>'
-      : job.badge === "featured"
-      ? '<span class="badge featured" style="position:static; margin-left:auto;">⭐ Featured</span>'
-      : '';
 
-    document.getElementById('jobDetailsCard').innerHTML = `
-      <div style="background:#fff; border:1px solid var(--border); border-radius:18px; padding:24px; box-shadow:0 4px 16px rgba(16,24,40,0.06);">
-        <div style="display:flex; align-items:center; gap:14px; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid var(--border);">
-          <img src="${job.logo}" alt="${job.company} logo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=' + encodeURIComponent(job.company) + '&background=1d5fe0&color=fff&bold=true&size=64';" style="width:56px; height:56px; border-radius:14px; border:1px solid var(--border); padding:8px; object-fit:contain;">
+    document
+      .getElementById('defaultJobContent')
+      .style.display = 'none';
+
+
+    document
+      .getElementById('jobDetailsCard')
+      .style.display = 'block';
+
+
+    /*
+      Dynamic SEO title
+    */
+
+    document.title =
+      job.title +
+      " at " +
+      job.company +
+      " | USA Job Finder";
+
+
+    /*
+      Dynamic description
+    */
+
+    const description =
+      document.querySelector(
+        'meta[name="description"]'
+      );
+
+    if (description) {
+
+      description.setAttribute(
+        'content',
+        job.title +
+        ' at ' +
+        job.company +
+        '. View job details, requirements, salary, location and apply through USA Job Finder.'
+      );
+
+    }
+
+
+    /*
+      Dynamic canonical
+    */
+
+    const canonical =
+      document.querySelector(
+        'link[rel="canonical"]'
+      );
+
+    if (canonical) {
+
+      canonical.setAttribute(
+        'href',
+        window.location.href
+      );
+
+    }
+
+
+    /*
+      Badge
+    */
+
+    let badgeHtml = '';
+
+    if (job.badge === "hot") {
+
+      badgeHtml =
+        '<span class="badge hot" style="position:static; margin-left:auto;">🔥 Hot Job</span>';
+
+    }
+
+    else if (job.badge === "featured") {
+
+      badgeHtml =
+        '<span class="badge featured" style="position:static; margin-left:auto;">⭐ Featured</span>';
+
+    }
+
+
+    /*
+      Responsibilities
+    */
+
+    const responsibilities =
+      Array.isArray(job.responsibilities)
+        ? job.responsibilities
+        : [];
+
+
+    /*
+      Requirements
+    */
+
+    const requirements =
+      Array.isArray(job.requirements)
+        ? job.requirements
+        : [];
+
+
+    /*
+      Job HTML
+    */
+
+    document
+      .getElementById('jobDetailsCard')
+      .innerHTML = `
+
+      <div style="
+        background:#fff;
+        border:1px solid var(--border);
+        border-radius:18px;
+        padding:24px;
+        box-shadow:0 4px 16px rgba(16,24,40,0.06);">
+
+        <div style="
+          display:flex;
+          align-items:center;
+          gap:14px;
+          margin-bottom:16px;
+          padding-bottom:16px;
+          border-bottom:1px solid var(--border);">
+
+          <img
+            src="${job.logo}"
+            alt="${job.company} logo"
+            onerror="
+              this.onerror=null;
+              this.src='https://ui-avatars.com/api/?name='
+              + encodeURIComponent('${job.company}')
+              + '&background=1d5fe0&color=fff&bold=true&size=64';
+            "
+            style="
+              width:56px;
+              height:56px;
+              border-radius:14px;
+              border:1px solid var(--border);
+              padding:8px;
+              object-fit:contain;">
+
           <div>
-            <h1 style="font-size:1.3rem; margin-bottom:2px;">${job.title}</h1>
-            <div style="color:var(--muted); font-size:0.92rem;">${job.company}</div>
+
+            <h1 style="
+              font-size:1.3rem;
+              margin-bottom:2px;">
+              ${job.title}
+            </h1>
+
+            <div style="
+              color:var(--muted);
+              font-size:0.92rem;">
+              ${job.company}
+            </div>
+
           </div>
+
           ${badgeHtml}
+
         </div>
 
-        <div class="job-meta" style="margin-bottom:20px;">
-          <span class="salary">💰 ${job.salary}</span>
-          <span>📍 ${job.location}</span>
-          <span>🕒 ${job.type}</span>
-          <span>🏠 ${job.remote}</span>
+
+        <div
+          class="job-meta"
+          style="margin-bottom:20px;">
+
+          <span class="salary">
+            💰 ${job.salary}
+          </span>
+
+          <span>
+            📍 ${job.location}
+          </span>
+
+          <span>
+            🕒 ${job.type}
+          </span>
+
+          <span>
+            🏠 ${job.remote}
+          </span>
+
         </div>
 
-        <h2 style="font-size:1.02rem; margin-bottom:8px;">About the Role</h2>
-        <p style="color:var(--muted); margin-bottom:16px; font-size:0.94rem;">${job.about}</p>
 
-        <h2 style="font-size:1.02rem; margin-bottom:8px;">Responsibilities</h2>
-        <ul style="color:var(--muted); font-size:0.94rem; margin:0 0 16px 20px;">
-          ${job.responsibilities.map(r => `<li style="margin-bottom:6px;">${r}</li>`).join('')}
+        <h2 style="
+          font-size:1.02rem;
+          margin-bottom:8px;">
+          About the Role
+        </h2>
+
+        <p style="
+          color:var(--muted);
+          margin-bottom:16px;
+          font-size:0.94rem;">
+          ${job.about}
+        </p>
+
+
+        <h2 style="
+          font-size:1.02rem;
+          margin-bottom:8px;">
+          Responsibilities
+        </h2>
+
+        <ul style="
+          color:var(--muted);
+          font-size:0.94rem;
+          margin:0 0 16px 20px;">
+
+          ${
+            responsibilities
+              .map(function (r) {
+
+                return `
+                  <li style="margin-bottom:6px;">
+                    ${r}
+                  </li>
+                `;
+
+              })
+              .join('')
+          }
+
         </ul>
 
-        <h2 style="font-size:1.02rem; margin-bottom:8px;">Requirements</h2>
-        <ul style="color:var(--muted); font-size:0.94rem; margin:0 0 20px 20px;">
-          ${job.requirements.map(r => `<li style="margin-bottom:6px;">${r}</li>`).join('')}
+
+        <h2 style="
+          font-size:1.02rem;
+          margin-bottom:8px;">
+          Requirements
+        </h2>
+
+        <ul style="
+          color:var(--muted);
+          font-size:0.94rem;
+          margin:0 0 20px 20px;">
+
+          ${
+            requirements
+              .map(function (r) {
+
+                return `
+                  <li style="margin-bottom:6px;">
+                    ${r}
+                  </li>
+                `;
+
+              })
+              .join('')
+          }
+
         </ul>
+
 
         <div class="job-actions">
-          <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
-          <button class="share-btn" onclick="shareJob('${job.title} at ${job.company}')">📤</button>
+
+          <a
+            href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr"
+            class="apply-btn">
+            Apply Now
+          </a>
+
+          <button
+            class="share-btn"
+            onclick="shareJob('${job.title} at ${job.company}')">
+            📤
+          </button>
+
         </div>
+
       </div>
+
     `;
-  } else {
-    document.getElementById('notFound').style.display = 'block';
+
   }
+
+})();
+
 </script>
+
 </body>
 </html>
