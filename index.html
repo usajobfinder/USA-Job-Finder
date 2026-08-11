@@ -1,247 +1,1119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>USA Job Finder | Find Your Dream Job in the USA</title>
-<meta name="description" content="Find the best Remote, Work From Home, Full Time and Part Time Jobs in the USA. Verified listings updated daily.">
 
-<meta name="google-site-verification" content="SB3Ho_1z3rsYL9LyVFN9UZj52x8abBO6xIvLmCJjPyE" />
+<title>USA Job Finder | Remote & Work From Home Jobs in USA</title>
+
+<meta name="description" content="Find remote, work from home, full-time and part-time job opportunities in the USA. Explore opportunities from popular companies and apply online.">
+
+<meta name="keywords" content="USA jobs, jobs in USA, remote jobs USA, work from home jobs USA, online jobs USA, part time jobs USA, full time jobs USA, remote work, data entry jobs, customer support jobs, virtual assistant jobs">
+
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<link rel="canonical" href="https://usajobfinder.github.io/USA-Job-Finder/">
+
+<meta name="google-site-verification" content="SB3Ho_1z3rsYL9LyVFN9UZj52x8abBO6xIvLmCJjPyE">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="USA Job Finder | Remote & Work From Home Jobs">
+<meta property="og:description" content="Explore remote, work from home, full-time and part-time job opportunities across the USA.">
+<meta property="og:url" content="https://usajobfinder.github.io/USA-Job-Finder/">
+<meta property="og:site_name" content="USA Job Finder">
+<meta property="og:image" content="https://usajobfinder.github.io/USA-Job-Finder/images/hero-work-from-home.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="USA Job Finder | Remote & Work From Home Jobs">
+<meta name="twitter:description" content="Explore remote, work from home, full-time and part-time job opportunities across the USA.">
+<meta name="twitter:image" content="https://usajobfinder.github.io/USA-Job-Finder/images/hero-work-from-home.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
+<!-- Website Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "USA Job Finder",
+  "url": "https://usajobfinder.github.io/USA-Job-Finder/",
+  "description": "USA job finder website featuring remote, work from home, full-time and part-time job opportunities.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://usajobfinder.github.io/USA-Job-Finder/jobs.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 </head>
+
 <body>
 
-<!-- Header -->
+<!-- HEADER -->
 <header>
   <div class="nav">
-    <button class="hamburger" onclick="openDrawer()" aria-label="Open menu"><span></span><span></span><span></span></button>
-    <a href="index.html" class="brand"><img src="logo.png" alt="USA Job Finder logo">USA Job Finder</a>
+
+    <button
+      class="hamburger"
+      onclick="openDrawer()"
+      aria-label="Open navigation menu">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+    <a href="index.html" class="brand">
+
+      <img
+        src="logo.png"
+        alt="USA Job Finder logo">
+
+      USA Job Finder
+
+    </a>
+
     <div style="width:42px;"></div>
+
   </div>
 </header>
 
-<!-- Side Drawer -->
-<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
-<nav class="drawer" id="drawer">
-  <div class="drawer-head">
-    <span class="brand"><img src="logo.png" alt="logo">USA Job Finder</span>
-    <button class="drawer-close" onclick="closeDrawer()">✕</button>
-  </div>
-  <div class="drawer-links">
-    <a href="index.html" class="active">🏠 Home</a>
-    <a href="jobs.html">💼 Jobs</a>
-    <a href="work-from-home.html">🏡 Work From Home</a>
-    <a href="jobs.html#featured">⭐ Featured Jobs</a>
-    <a href="index.html#companies">🏢 Top Companies</a>
-    <a href="about.html">ℹ️ About</a>
-    <a href="contact.html">✉️ Contact</a>
-  </div>
-  <a href="join.html" class="drawer-cta">👤 Join Free</a>
-</nav>
 
-<main>
-  <!-- Hero -->
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-eyebrow">USA'S TRUSTED JOB LISTINGS</div>
-      <h1>Find Your Dream Job in the USA</h1>
-      <p class="sub"><b>Remote</b> • <b>Work From Home</b> • <b>Full-Time</b> • <b>Part-Time</b></p>
+<!-- SIDE DRAWER -->
 
-      <div class="search-box">
-        <input type="text" placeholder="🔍 Job title, keyword or company">
-        <button type="button">Search</button>
-      </div>
-      <button class="browse-btn" onclick="location.href='jobs.html'">🔍 Browse Jobs</button>
-
-      <div class="hero-image">
-        <img src="images/hero-work-from-home.png" alt="Young woman working from home on laptop" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none; flex-direction:column; align-items:center; gap:8px;">
-          <span style="font-size:2.4rem;">💻👩‍💻</span>
-          <span>Add your hero image at <b>hero-work-from-home.png</b><br>(modern, professional, work-from-home style)</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Jobs -->
-  <section id="featured">
-    <div class="wrap">
-      <div class="section-head"><h2>⭐ Featured Jobs</h2><a href="jobs.html">See all →</a></div>
-      <div class="grid">
-
-        <div class="job-card">
-          <span class="badge hot">🔥 Hot Job</span>
-          <div class="job-card-top" onclick="location.href='job-details.html?id=google-data-entry'" style="cursor:pointer;">
-            <img class="company-logo" src="https://www.google.com/s2/favicons?domain=google.com&sz=128" alt="Google logo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Google&background=4285F4&color=fff&bold=true&size=64';">
-            <div><div class="job-title">Remote Data Entry Clerk</div><div class="company-name">Google</div></div>
-          </div>
-          <div class="job-meta">
-            <span class="salary">💰 $30/hr</span>
-            <span>📍 USA</span>
-            <span>🕒 Full Time</span>
-          </div>
-          <div class="job-actions">
-            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
-            <button class="share-btn" onclick="shareJob('Remote Data Entry Clerk at Google','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
-          </div>
-        </div>
-
-        <div class="job-card">
-          <span class="badge featured">⭐ Featured</span>
-          <div class="job-card-top" onclick="location.href='job-details.html?id=amazon-support'" style="cursor:pointer;">
-            <img class="company-logo" src="https://www.google.com/s2/favicons?domain=amazon.com&sz=128" alt="Amazon logo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Amazon&background=FF9900&color=fff&bold=true&size=64';">
-            <div><div class="job-title">Customer Support Agent</div><div class="company-name">Amazon</div></div>
-          </div>
-          <div class="job-meta">
-            <span class="salary">💰 $28/hr</span>
-            <span>📍 USA</span>
-            <span>🕒 Full Time</span>
-          </div>
-          <div class="job-actions">
-            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
-            <button class="share-btn" onclick="shareJob('Customer Support Agent at Amazon','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
-          </div>
-        </div>
-
-        <div class="job-card">
-          <span class="badge hot">🔥 Hot Job</span>
-          <div class="job-card-top" onclick="location.href='job-details.html?id=microsoft-va'" style="cursor:pointer;">
-            <img class="company-logo" src="https://www.google.com/s2/favicons?domain=microsoft.com&sz=128" alt="Microsoft logo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Microsoft&background=00A4EF&color=fff&bold=true&size=64';">
-            <div><div class="job-title">Virtual Assistant</div><div class="company-name">Microsoft</div></div>
-          </div>
-          <div class="job-meta">
-            <span class="salary">💰 $35/hr</span>
-            <span>📍 USA</span>
-            <span>🕒 Part Time</span>
-          </div>
-          <div class="job-actions">
-            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
-            <button class="share-btn" onclick="shareJob('Virtual Assistant at Microsoft','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Latest Jobs -->
-  <section class="section-alt">
-    <div class="wrap">
-      <div class="section-head"><h2>🆕 Latest Jobs</h2><a href="jobs.html">See all →</a></div>
-      <div class="grid">
-
-        <div class="job-card">
-          <div class="job-card-top" onclick="location.href='job-details.html?id=apple-marketing'" style="cursor:pointer;">
-            <img class="company-logo" src="https://www.google.com/s2/favicons?domain=apple.com&sz=128" alt="Apple logo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Apple&background=555555&color=fff&bold=true&size=64';">
-            <div><div class="job-title">Marketing Assistant</div><div class="company-name">Apple</div></div>
-          </div>
-          <div class="job-meta">
-            <span class="salary">💰 $32/hr</span>
-            <span>📍 USA</span>
-            <span>🕒 Full Time</span>
-          </div>
-          <div class="job-actions">
-            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
-            <button class="share-btn" onclick="shareJob('Marketing Assistant at Apple','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
-          </div>
-        </div>
-
-        <div class="job-card">
-          <div class="job-card-top" onclick="location.href='job-details.html?id=tesla-sales'" style="cursor:pointer;">
-            <img class="company-logo" src="https://www.google.com/s2/favicons?domain=tesla.com&sz=128" alt="Tesla logo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Tesla&background=CC0000&color=fff&bold=true&size=64';">
-            <div><div class="job-title">Remote Sales Representative</div><div class="company-name">Tesla</div></div>
-          </div>
-          <div class="job-meta">
-            <span class="salary">💰 $34/hr</span>
-            <span>📍 USA</span>
-            <span>🕒 Full Time</span>
-          </div>
-          <div class="job-actions">
-            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
-            <button class="share-btn" onclick="shareJob('Remote Sales Representative at Tesla','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
-          </div>
-        </div>
-
-        <div class="job-card">
-          <div class="job-card-top" onclick="location.href='job-details.html?id=walmart-admin'" style="cursor:pointer;">
-            <img class="company-logo" src="https://www.google.com/s2/favicons?domain=walmart.com&sz=128" alt="Walmart logo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Walmart&background=0071CE&color=fff&bold=true&size=64';">
-            <div><div class="job-title">Administrative Assistant</div><div class="company-name">Walmart</div></div>
-          </div>
-          <div class="job-meta">
-            <span class="salary">💰 $27/hr</span>
-            <span>📍 USA</span>
-            <span>🕒 Part Time</span>
-          </div>
-          <div class="job-actions">
-            <a href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr" class="apply-btn">Apply Now</a>
-            <button class="share-btn" onclick="shareJob('Administrative Assistant at Walmart','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">📤</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Top Companies -->
-  <section id="companies">
-    <div class="wrap">
-      <div class="section-head"><h2>🏢 Top Hiring Companies</h2></div>
-      <div class="company-row">
-        <div class="company-chip"><img src="https://www.google.com/s2/favicons?domain=google.com&sz=128" alt="Google" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Google&background=4285F4&color=fff&bold=true&size=64';"><span>Google</span></div>
-        <div class="company-chip"><img src="https://www.google.com/s2/favicons?domain=amazon.com&sz=128" alt="Amazon" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Amazon&background=FF9900&color=fff&bold=true&size=64';"><span>Amazon</span></div>
-        <div class="company-chip"><img src="https://www.google.com/s2/favicons?domain=microsoft.com&sz=128" alt="Microsoft" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Microsoft&background=00A4EF&color=fff&bold=true&size=64';"><span>Microsoft</span></div>
-        <div class="company-chip"><img src="https://www.google.com/s2/favicons?domain=apple.com&sz=128" alt="Apple" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Apple&background=555555&color=fff&bold=true&size=64';"><span>Apple</span></div>
-        <div class="company-chip"><img src="https://www.google.com/s2/favicons?domain=tesla.com&sz=128" alt="Tesla" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Tesla&background=CC0000&color=fff&bold=true&size=64';"><span>Tesla</span></div>
-        <div class="company-chip"><img src="https://www.google.com/s2/favicons?domain=walmart.com&sz=128" alt="Walmart" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Walmart&background=0071CE&color=fff&bold=true&size=64';"><span>Walmart</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Join Free CTA strip -->
-  <section class="section-alt">
-    <div class="wrap" style="text-align:center;">
-      <h2 style="margin-bottom:8px;">👤 Get Matched Faster</h2>
-      <p style="color:var(--muted); margin-bottom:18px;">Join free and unlock personalized job alerts.</p>
-      <a href="join.html" class="apply-btn" style="display:inline-block; padding:14px 36px;">Join Free</a>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <div class="foot-links">
-      <a href="index.html">Home</a>
-      <a href="jobs.html">Jobs</a>
-      <a href="work-from-home.html">Work From Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms</a>
-    </div>
-    <div class="foot-bottom">
-      <span>© 2026 USA Job Finder. All Rights Reserved.</span>
-    </div>
-  </div>
-</footer>
-
-<!-- Share Sheet Fallback -->
-<div class="share-sheet-overlay" id="shareSheet" onclick="if(event.target===this)closeShareSheet()">
-  <div class="share-sheet">
-    <h3 id="shareTitle">Share this job</h3>
-    <div class="share-grid">
-      <a id="shareFb" href="#" target="_blank"><span class="ic fb">f</span>Facebook</a>
-      <a id="shareWa" href="#" target="_blank"><span class="ic wa">W</span>WhatsApp</a>
-      <a id="shareMsg" href="#" target="_blank"><span class="ic msg">M</span>Messenger</a>
-      <a id="shareTg" href="#" target="_blank"><span class="ic tg">T</span>Telegram</a>
-      <a id="shareGm" href="#"><span class="ic gm">@</span>Gmail</a>
-    </div>
-    <button class="share-cancel" onclick="closeShareSheet()">Cancel</button>
-  </div>
+<div
+  class="overlay"
+  id="overlay"
+  onclick="closeDrawer()">
 </div>
 
+<nav
+  class="drawer"
+  id="drawer"
+  aria-label="Main navigation">
+
+  <div class="drawer-head">
+
+    <span class="brand">
+
+      <img
+        src="logo.png"
+        alt="USA Job Finder logo">
+
+      USA Job Finder
+
+    </span>
+
+    <button
+      class="drawer-close"
+      onclick="closeDrawer()"
+      aria-label="Close menu">
+
+      ✕
+
+    </button>
+
+  </div>
+
+
+  <div class="drawer-links">
+
+    <a href="index.html" class="active">
+      🏠 Home
+    </a>
+
+    <a href="jobs.html">
+      💼 Jobs
+    </a>
+
+    <a href="work-from-home.html">
+      🏡 Work From Home
+    </a>
+
+    <a href="jobs.html#featured">
+      ⭐ Featured Jobs
+    </a>
+
+    <a href="index.html#companies">
+      🏢 Top Companies
+    </a>
+
+    <a href="about.html">
+      ℹ️ About
+    </a>
+
+    <a href="contact.html">
+      ✉️ Contact
+    </a>
+
+  </div>
+
+
+  <a
+    href="join.html"
+    class="drawer-cta">
+
+    👤 Join Free
+
+  </a>
+
+</nav>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="wrap">
+
+    <div class="hero-eyebrow">
+      USA JOB OPPORTUNITIES
+    </div>
+
+    <h1>
+      Find Your Dream Job in the USA
+    </h1>
+
+    <p class="sub">
+      <b>Remote</b> •
+      <b>Work From Home</b> •
+      <b>Full-Time</b> •
+      <b>Part-Time</b>
+    </p>
+
+
+    <div class="search-box">
+
+      <input
+        type="text"
+        placeholder="🔍 Job title, keyword or company"
+        aria-label="Search job title, keyword or company">
+
+      <button type="button">
+        Search
+      </button>
+
+    </div>
+
+
+    <button
+      class="browse-btn"
+      onclick="location.href='jobs.html'">
+
+      🔍 Browse Jobs
+
+    </button>
+
+
+    <div class="hero-image">
+
+      <img
+        src="images/hero-work-from-home.png"
+        alt="Young woman working from home on laptop"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+
+      <div
+        class="placeholder"
+        style="display:none; flex-direction:column; align-items:center; gap:8px;">
+
+        <span style="font-size:2.4rem;">
+          💻👩‍💻
+        </span>
+
+        <span>
+          Add your hero image at
+          <b>hero-work-from-home.png</b>
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- SEO CONTENT -->
+
+<section>
+
+  <div class="wrap">
+
+    <div style="max-width:760px;margin:auto;">
+
+      <h2>
+        Find Jobs in the USA
+      </h2>
+
+      <p style="color:var(--muted);line-height:1.8;">
+
+        USA Job Finder makes it easier to explore job
+        opportunities across the United States. Browse
+        remote jobs, work from home opportunities,
+        full-time positions and part-time jobs.
+
+      </p>
+
+      <p style="color:var(--muted);line-height:1.8;">
+
+        Explore opportunities in areas such as data entry,
+        customer support, virtual assistance, marketing,
+        sales and administrative work.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- FEATURED JOBS -->
+
+<section id="featured">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <h2>
+        ⭐ Featured Jobs
+      </h2>
+
+      <a href="jobs.html">
+        See all →
+      </a>
+
+    </div>
+
+
+    <div class="grid">
+
+
+      <!-- GOOGLE -->
+
+      <div class="job-card">
+
+        <span class="badge hot">
+          🔥 Hot Job
+        </span>
+
+
+        <div
+          class="job-card-top"
+          onclick="location.href='job-details.html?id=google-data-entry'"
+          style="cursor:pointer;">
+
+          <img
+            class="company-logo"
+            src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
+            alt="Google">
+
+          <div>
+
+            <div class="job-title">
+              Remote Data Entry Clerk
+            </div>
+
+            <div class="company-name">
+              Google
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="job-meta">
+
+          <span class="salary">
+            💰 $30/hr
+          </span>
+
+          <span>
+            📍 USA
+          </span>
+
+          <span>
+            🕒 Full Time
+          </span>
+
+        </div>
+
+
+        <div class="job-actions">
+
+          <a
+            href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr"
+            class="apply-btn">
+
+            Apply Now
+
+          </a>
+
+
+          <button
+            class="share-btn"
+            onclick="shareJob('Remote Data Entry Clerk at Google','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">
+
+            📤
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- AMAZON -->
+
+      <div class="job-card">
+
+        <span class="badge featured">
+          ⭐ Featured
+        </span>
+
+
+        <div
+          class="job-card-top"
+          onclick="location.href='job-details.html?id=amazon-support'"
+          style="cursor:pointer;">
+
+          <img
+            class="company-logo"
+            src="https://www.google.com/s2/favicons?domain=amazon.com&sz=128"
+            alt="Amazon">
+
+          <div>
+
+            <div class="job-title">
+              Customer Support Agent
+            </div>
+
+            <div class="company-name">
+              Amazon
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="job-meta">
+
+          <span class="salary">
+            💰 $28/hr
+          </span>
+
+          <span>
+            📍 USA
+          </span>
+
+          <span>
+            🕒 Full Time
+          </span>
+
+        </div>
+
+
+        <div class="job-actions">
+
+          <a
+            href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr"
+            class="apply-btn">
+
+            Apply Now
+
+          </a>
+
+
+          <button
+            class="share-btn"
+            onclick="shareJob('Customer Support Agent at Amazon','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">
+
+            📤
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- MICROSOFT -->
+
+      <div class="job-card">
+
+        <span class="badge hot">
+          🔥 Hot Job
+        </span>
+
+
+        <div
+          class="job-card-top"
+          onclick="location.href='job-details.html?id=microsoft-va'"
+          style="cursor:pointer;">
+
+          <img
+            class="company-logo"
+            src="https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
+            alt="Microsoft">
+
+          <div>
+
+            <div class="job-title">
+              Virtual Assistant
+            </div>
+
+            <div class="company-name">
+              Microsoft
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="job-meta">
+
+          <span class="salary">
+            💰 $35/hr
+          </span>
+
+          <span>
+            📍 USA
+          </span>
+
+          <span>
+            🕒 Part Time
+          </span>
+
+        </div>
+
+
+        <div class="job-actions">
+
+          <a
+            href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr"
+            class="apply-btn">
+
+            Apply Now
+
+          </a>
+
+
+          <button
+            class="share-btn"
+            onclick="shareJob('Virtual Assistant at Microsoft','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">
+
+            📤
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- LATEST JOBS -->
+
+<section class="section-alt">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <h2>
+        🆕 Latest Jobs
+      </h2>
+
+      <a href="jobs.html">
+        See all →
+      </a>
+
+    </div>
+
+
+    <div class="grid">
+
+
+      <!-- APPLE -->
+
+      <div class="job-card">
+
+        <div
+          class="job-card-top"
+          onclick="location.href='job-details.html?id=apple-marketing'"
+          style="cursor:pointer;">
+
+          <img
+            class="company-logo"
+            src="https://www.google.com/s2/favicons?domain=apple.com&sz=128"
+            alt="Apple">
+
+          <div>
+
+            <div class="job-title">
+              Marketing Assistant
+            </div>
+
+            <div class="company-name">
+              Apple
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="job-meta">
+
+          <span class="salary">
+            💰 $32/hr
+          </span>
+
+          <span>
+            📍 USA
+          </span>
+
+          <span>
+            🕒 Full Time
+          </span>
+
+        </div>
+
+
+        <div class="job-actions">
+
+          <a
+            href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr"
+            class="apply-btn">
+
+            Apply Now
+
+          </a>
+
+
+          <button
+            class="share-btn"
+            onclick="shareJob('Marketing Assistant at Apple','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">
+
+            📤
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- TESLA -->
+
+      <div class="job-card">
+
+        <div
+          class="job-card-top"
+          onclick="location.href='job-details.html?id=tesla-sales'"
+          style="cursor:pointer;">
+
+          <img
+            class="company-logo"
+            src="https://www.google.com/s2/favicons?domain=tesla.com&sz=128"
+            alt="Tesla">
+
+          <div>
+
+            <div class="job-title">
+              Remote Sales Representative
+            </div>
+
+            <div class="company-name">
+              Tesla
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="job-meta">
+
+          <span class="salary">
+            💰 $34/hr
+          </span>
+
+          <span>
+            📍 USA
+          </span>
+
+          <span>
+            🕒 Full Time
+          </span>
+
+        </div>
+
+
+        <div class="job-actions">
+
+          <a
+            href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr"
+            class="apply-btn">
+
+            Apply Now
+
+          </a>
+
+
+          <button
+            class="share-btn"
+            onclick="shareJob('Remote Sales Representative at Tesla','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">
+
+            📤
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- WALMART -->
+
+      <div class="job-card">
+
+        <div
+          class="job-card-top"
+          onclick="location.href='job-details.html?id=walmart-admin'"
+          style="cursor:pointer;">
+
+          <img
+            class="company-logo"
+            src="https://www.google.com/s2/favicons?domain=walmart.com&sz=128"
+            alt="Walmart">
+
+          <div>
+
+            <div class="job-title">
+              Administrative Assistant
+            </div>
+
+            <div class="company-name">
+              Walmart
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="job-meta">
+
+          <span class="salary">
+            💰 $27/hr
+          </span>
+
+          <span>
+            📍 USA
+          </span>
+
+          <span>
+            🕒 Part Time
+          </span>
+
+        </div>
+
+
+        <div class="job-actions">
+
+          <a
+            href="https://www.af9m8trk.com/6YC113M8/1QE12Q9Z/?s1=mhr"
+            class="apply-btn">
+
+            Apply Now
+
+          </a>
+
+
+          <button
+            class="share-btn"
+            onclick="shareJob('Administrative Assistant at Walmart','https://usajobfinder.github.io/USA-Job-Finder/job-details.html')">
+
+            📤
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- SEO CONTENT -->
+
+<section>
+
+  <div class="wrap">
+
+    <div style="max-width:760px;margin:auto;">
+
+      <h2>
+        Popular Job Searches in the USA
+      </h2>
+
+      <p style="color:var(--muted);line-height:1.8;">
+
+        Looking for jobs in the USA? Explore remote jobs,
+        work from home jobs, full-time jobs and part-time
+        opportunities. Popular searches include data entry
+        jobs, customer service jobs, virtual assistant jobs,
+        marketing jobs, sales jobs and administrative jobs.
+
+      </p>
+
+
+      <p style="color:var(--muted);line-height:1.8;">
+
+        Start exploring available opportunities and find
+        job listings that match your interests, experience
+        and preferred work style.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- TOP COMPANIES -->
+
+<section id="companies">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <h2>
+        🏢 Top Companies
+      </h2>
+
+    </div>
+
+
+    <div class="company-row">
+
+      <div class="company-chip">
+
+        <img
+          src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
+          alt="Google">
+
+        <span>
+          Google
+        </span>
+
+      </div>
+
+
+      <div class="company-chip">
+
+        <img
+          src="https://www.google.com/s2/favicons?domain=amazon.com&sz=128"
+          alt="Amazon">
+
+        <span>
+          Amazon
+        </span>
+
+      </div>
+
+
+      <div class="company-chip">
+
+        <img
+          src="https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
+          alt="Microsoft">
+
+        <span>
+          Microsoft
+        </span>
+
+      </div>
+
+
+      <div class="company-chip">
+
+        <img
+          src="https://www.google.com/s2/favicons?domain=apple.com&sz=128"
+          alt="Apple">
+
+        <span>
+          Apple
+        </span>
+
+      </div>
+
+
+      <div class="company-chip">
+
+        <img
+          src="https://www.google.com/s2/favicons?domain=tesla.com&sz=128"
+          alt="Tesla">
+
+        <span>
+          Tesla
+        </span>
+
+      </div>
+
+
+      <div class="company-chip">
+
+        <img
+          src="https://www.google.com/s2/favicons?domain=walmart.com&sz=128"
+          alt="Walmart">
+
+        <span>
+          Walmart
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- CTA -->
+
+<section class="section-alt">
+
+  <div
+    class="wrap"
+    style="text-align:center;">
+
+    <h2 style="margin-bottom:8px;">
+      👤 Explore More Opportunities
+    </h2>
+
+    <p
+      style="color:var(--muted);margin-bottom:18px;">
+
+      Browse more USA job opportunities and find
+      options that match your interests.
+
+    </p>
+
+
+    <a
+      href="jobs.html"
+      class="apply-btn"
+      style="display:inline-block;padding:14px 36px;">
+
+      Browse Jobs
+
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="wrap">
+
+    <div class="foot-links">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="jobs.html">
+        Jobs
+      </a>
+
+      <a href="work-from-home.html">
+        Work From Home
+      </a>
+
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
+      <a href="privacy.html">
+        Privacy Policy
+      </a>
+
+      <a href="terms.html">
+        Terms
+      </a>
+
+    </div>
+
+
+    <div class="foot-bottom">
+
+      <span>
+        © 2026 USA Job Finder. All Rights Reserved.
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<!-- SHARE SHEET -->
+
+<div
+  class="share-sheet-overlay"
+  id="shareSheet"
+  onclick="if(event.target===this)closeShareSheet()">
+
+  <div class="share-sheet">
+
+    <h3 id="shareTitle">
+      Share this job
+    </h3>
+
+
+    <div class="share-grid">
+
+      <a
+        id="shareFb"
+        href="#"
+        target="_blank">
+
+        <span class="ic fb">
+          f
+        </span>
+
+        Facebook
+
+      </a>
+
+
+      <a
+        id="shareWa"
+        href="#"
+        target="_blank">
+
+        <span class="ic wa">
+          W
+        </span>
+
+        WhatsApp
+
+      </a>
+
+
+      <a
+        id="shareMsg"
+        href="#"
+        target="_blank">
+
+        <span class="ic msg">
+          M
+        </span>
+
+        Messenger
+
+      </a>
+
+
+      <a
+        id="shareTg"
+        href="#"
+        target="_blank">
+
+        <span class="ic tg">
+          T
+        </span>
+
+        Telegram
+
+      </a>
+
+
+      <a
+        id="shareGm"
+        href="#">
+
+        <span class="ic gm">
+          @
+        </span>
+
+        Gmail
+
+      </a>
+
+    </div>
+
+
+    <button
+      class="share-cancel"
+      onclick="closeShareSheet()">
+
+      Cancel
+
+    </button>
+
+  </div>
+
+</div>
+
+
 <script src="script.js"></script>
+
 </body>
-            </html>
+        </html>
